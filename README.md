@@ -1,54 +1,83 @@
-DevBurger 🍔
-DevBurger é uma aplicação Full Stack de E-commerce desenvolvida durante os estudos no DevClub, com o objetivo de consolidar conhecimentos em desenvolvimento web, simulando o fluxo completo de uma loja virtual.
+# 🍔 CodeBurguer — Frontend
 
-📌 Descrição do Projeto
-Este projeto representa uma hamburgueria virtual com funcionalidades completas, desde o cadastro de usuários até o processamento de pedidos. A proposta é proporcionar uma experiência realista de um sistema de e-commerce, integrando o front-end com o back-end e utilizando bancos de dados relacionais e não-relacionais.
+Interface web de uma hamburgueria virtual full stack, com fluxo completo de compra, carrinho de itens, checkout e integração com pagamento via Stripe.
 
-⚙️ Funcionalidades
-Cadastro e login de usuários com autenticação via JWT
+[![CodeBurguer API](https://img.shields.io/badge/Backend-CodeBurguer--API-green?style=flat&logo=github)](https://github.com/MaximillionDev1/CodeBurguer-api)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?style=flat&logo=javascript&logoColor=000)
+![React](https://img.shields.io/badge/React-20232A?style=flat&logo=react)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat&logo=vite&logoColor=fff)
 
-Menu dinâmico com produtos organizados por categorias
+---
 
-Adição e remoção de itens no carrinho
+## 🚀 Tecnologias
 
-Checkout com simulação de pagamento via Stripe
+| Camada | Tecnologia |
+|---|---|
+| UI | React + Vite |
+| Estilização | Styled Components |
+| Roteamento | React Router DOM |
+| HTTP | Axios |
+| Pagamento | Stripe (checkout) |
+| Feedback | React Toastify |
+| Responsividade | React Responsive |
 
-Upload de imagens para os produtos
+---
 
-Integração com PostgreSQL e MongoDB
+## ✨ Funcionalidades
 
-🧰 Tecnologias Utilizadas
-💻 Front-end
-React + Vite
+- 🔐 Cadastro e login de usuários com autenticação JWT
+- 🛒 Carrinho de compras com adição, remoção e atualização de itens
+- 📦 Catálogo dinâmico de produtos por categoria
+- 💳 Checkout com integração Stripe
+- 📱 Layout responsivo para mobile, tablet e desktop
+- 🔔 Notificações de feedback com React Toastify
 
-React Router DOM – Navegação entre páginas
+---
 
-Styled-components – Estilização com CSS-in-JS
+## ⚙️ Como rodar localmente
+```bash
+# Clone o repositório
+git clone https://github.com/MaximillionDev1/CodeBurguer.git
+cd CodeBurguer
 
-Axios – Requisições HTTP
+# Instale as dependências
+yarn install
 
-React Toastify – Feedback ao usuário
+# Configure o ambiente
+cp .env.example .env
+# Edite o .env com a URL da sua API
 
-React-Responsive – Responsividade por tamanho de tela
+# Inicie o servidor de desenvolvimento
+yarn dev
+```
 
-🛠️ Back-end
-Node.js com Express
+> ⚠️ Este frontend depende da [CodeBurguer API](https://github.com/MaximillionDev1/CodeBurguer-api) rodando localmente ou em produção.
 
-JWT – Autenticação baseada em token
+---
 
-Yup – Validação de dados
+## 📁 Estrutura
+```
+src/
+├── components/   # Componentes reutilizáveis (Header, Cart, Modal...)
+├── containers/   # Páginas principais (Home, Login, Register, Cart)
+├── routes/       # Configuração de rotas públicas e privadas
+├── services/     # Configuração do Axios e chamadas à API
+└── styles/       # Estilos globais e temas
+```
 
-CORS – Configuração de permissões de requisições
+---
 
-Multer – Upload de arquivos
+## 🔗 Repositório do Backend
 
-🗃️ Banco de Dados
-PostgreSQL com Sequelize – Dados relacionais (usuários, produtos, categorias)
+A API que alimenta este frontend está disponível em:
+👉 [CodeBurguer-api](https://github.com/MaximillionDev1/CodeBurguer-api) — Node.js · Express · PostgreSQL · MongoDB · JWT · Stripe
 
-MongoDB com Mongoose – Dados não-relacionais (pedidos)
+---
 
-📱 Responsividade
-A aplicação é totalmente responsiva, garantindo uma boa experiência de uso em dispositivos móveis, tablets e desktops.
+## 👨‍💻 Autor
 
-🚀 Status
-Projeto finalizado e disponível para visualização e testes.
+**Matheus Vinicius** · [GitHub](https://github.com/MaximillionDev1) · [LinkedIn](https://www.linkedin.com/in/matheus-vinicius-dev)
+
+## 📄 Licença
+
+MIT
