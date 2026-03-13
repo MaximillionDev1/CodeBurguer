@@ -1,5 +1,9 @@
 # 🍔 CodeBurguer — Frontend
 
+<p align="center">
+  <img src="./src/assets/preview.gif" alt="Preview da aplicação" width="900"/>
+</p>
+
 Interface web de uma hamburgueria virtual full stack, com fluxo completo de compra, carrinho de itens, checkout e integração com pagamento via Stripe.
 
 [![CodeBurguer API](https://img.shields.io/badge/Backend-CodeBurguer--API-green?style=flat&logo=github)](https://github.com/MaximillionDev1/CodeBurguer-api)
